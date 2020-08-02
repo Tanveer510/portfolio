@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Variables*/
+:root{
+  --mainwhite: #fbfbf2;
+  --maingrey: #e5e6e4;
+  --primary: #30343f;
+  --mainblack: #000000;
+  --mainblue: #2a9d8f;
+}
+
+/*Globals*/
+body{
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary);
+  padding: 1.5rem 1rem;
+  background: var(--maingrey);
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
+/*Wrapper Start*/
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  'a b b'
+  'a b b'
+  'a c c'
+  'e e e';
+  grid-gap: 2rem;
+}
+
+
+/* Myself section start*/
+.myself{
+  grid-area: a;
+  background: var(--mainwhite);
+}
+
+.photo{
+  background: url('./images/tan.jpg')center/cover;
+  width: 100%;
+  height: 180px;
+  color: var(--mainwhite);
+  display: flex;
+  align-items: flex-end;
+  padding: 0.5rem 1rem;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+/*details*/
+.details{
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.details p{
+  padding: 1rem 0;
+}
+
+.details p span{
+  margin-right: 0.4rem;
+}
+
+hr{
+  width: 80%;
+  margin-left: 1rem;
+  border-top: 0.002px solid black;
+}
+
+/*skills*/
+
+.skill-heading{
+  display: flex;
+  padding: 1.5rem 0;
+
+}
+
+.skills span , .skills h3{
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+
+.skills-info{
+  padding: 1rem 0.5rem;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.outer{
+  background: var(--maingrey);
+  width: 85%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.html{
+  background: var(--mainblue);
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.css{
+  background: var(--mainblue);
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.js{
+  background: var(--mainblue);
+  width: 20%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.python{
+  background: var(--mainblue);
+  width: 60%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.django{
+  background: var(--mainblue);
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/*Languages*/
+.english{
+  background: var(--mainblue);
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.hindi{
+  background: var(--mainblue);
+  width: 95%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Myself section Ends*/
+
+/*#####################*?
+
+
+/*Education Section*/
+
+.education{
+  background: var(--mainwhite);
+  grid-area: b;
+  padding: 1rem;
+}
+
+.education-title{
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 2rem;
+}
+
+.education-title i,
+.education-title h2{
+  padding: 0 1rem;
+}
+
+.education-title i{
+  font-size: 2rem;
+}
+
+.study{
+  padding: 2rem 1rem;
+}
+
+.std{
+  display: flex;
+  align-items: baseline;
+}
+
+.std i, .std h4{
+  padding: 0 0.5rem;
+  display: block;
+}
+
+.study h2,
+.study h4,
+.study std{
+  padding: 0.5rem 0;
+}
+
+/*Education Section Ends*/
+
+.work{
+  background: var(--mainwhite);
+  grid-area: c;
+  padding: 1rem;
+}
+
+footer{
+  background: var(--mainblue);
+  grid-area: e;
+  padding: 1rem;
+  color: var(--mainwhite);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 0.3em;
+}
+
+.logos{
+  padding-top: 1rem;
+}
+
+
+span,i{
+  color: var(--mainblue);
+}
+
+.logos i{
+  color: var(--mainwhite);
+}
+
+@media screen and (max-width: 600px){
+
+
+  body{
+    padding: 0;
+  }
+
+  .wrapper{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'a'
+    'b'
+    'e';
+
+    grid-column-gap: 1rem;
+    padding: 0;
+    margin-left: 3rem;
+  }
+
+
+}
+
+/*Wrapper End*/
